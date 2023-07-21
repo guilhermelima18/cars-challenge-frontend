@@ -2,6 +2,7 @@
   "cars": [
     {
       "id": "3903a1ec-24a5-4c81-aec8-ff1ba2ddad62",
+      "imageUrl": "https://3.bp.blogspot.com/-sbeos1Iiaak/U3QsNfFtGDI/AAAAAAABVkc/lfokutLKO-M/s1600/Novo-Chevrolet-Onix-LTZ-2015+(8).jpg",
       "brand": "Chevrolet",
       "model": "Ônix",
       "year": "2015",
@@ -9,6 +10,7 @@
     },
     {
       "id": "910fcd59-8e6e-4c3e-b60d-44abcb635089",
+      "imageUrl": "https://quatrorodas.abril.com.br/wp-content/uploads/2018/02/chevrolet-prisma-advantage.jpg?quality=70&strip=info",
       "brand": "Chevrolet",
       "model": "Prisma",
       "year": "2014",
@@ -16,6 +18,7 @@
     },
     {
       "id": "65f17613-9f74-4e25-a176-e40b8d8f5bab",
+      "imageUrl": "https://www.chevrolet.com.br/content/dam/chevrolet/mercosur/brazil/portuguese/index/cars/2019-cobalt/colorizer/03-images/novo-cobalt-2018-branco.jpg?imwidth=960",
       "brand": "Chevrolet",
       "model": "Cobalt",
       "year": "2016",
@@ -23,10 +26,31 @@
     },
     {
       "id": "044ea1b3-4f55-46d6-91ec-6021c1591cd4",
-      "brand": "Chevrolet",
-      "model": "Astra",
-      "year": "2011",
+      "imageUrl": "https://quatrorodas.abril.com.br/wp-content/uploads/2020/09/FiatArgoDrive13dianteira_2-e1599836711163.jpeg?quality=70&strip=info",
+      "brand": "Fiat",
+      "model": "Argo",
+      "year": "2018",
       "plate": "RHZ-4860"
+    },
+    {
+      "id": "21766a96-22bf-4d1a-aea0-a345d879d6ae",
+      "imageUrl": "https://i.ibb.co/3fzv7hR/marvels-spider-man-miles-morales-ps4-and-ps5-video-game-2-wallpaper-1920x1080.jpg",
+      "brand": "Marvel",
+      "model": "Spider Man",
+      "plate": "HUO-7845",
+      "year": "2015",
+      "description": "Spider Man Movie",
+      "assessment": "Bom"
+    },
+    {
+      "id": "0f2517a7-cf3c-4b49-b8ba-ec0e76902b02",
+      "imageUrl": "https://i.ibb.co/R9jJh0j/ms-windows-wallpaper-1920x1080.jpg",
+      "brand": "Microsoft",
+      "model": "Windows 11",
+      "plate": "EYZ-4563",
+      "year": "2018",
+      "description": "Sistema Operacional",
+      "assessment": "Bom"
     }
   ]
 }

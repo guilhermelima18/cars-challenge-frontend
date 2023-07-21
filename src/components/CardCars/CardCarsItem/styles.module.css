@@ -1,0 +1,38 @@
+.cardContent {
+  width: 25rem;
+  height: 27rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardImg {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+
+  > img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+  }
+}
+
+.cardHeader {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  > div {
+    font-size: 1.2rem;
+    color: var(--text);
+  }
+
+  > button {
+    width: 100%;
+  }
+}

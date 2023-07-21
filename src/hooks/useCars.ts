@@ -2,13 +2,23 @@ import { useCallback, useState } from "react";
 import { api } from "../libs/api";
 import { Cars } from "../types/cars";
 
+type CreateCarProps = {
+  imageUrl?: string | null;
+  brand: string;
+  model: string;
+  year: string;
+  plate: string;
+  description: string;
+};
+
 export function useCars() {
   const [cars, setCars] = useState<Cars[]>([]);
-  const [loading, setLoading] = useState(false);
+  const [getCarsLoading, setGetCarsLoading] = useState(false);
+  const [registerCarLoading, setRegisterCarLoading] = useState(false);
 
   const getCars = useCallback(async () => {
     try {
-      setLoading(true);
+      setGetCarsLoading(true);
       const response = await api.get("/cars");
 
       if (response.status === 200) {
@@ -17,13 +27,28 @@ export function useCars() {
     } catch (error) {
       throw new Error();
     } finally {
-      setLoading(false);
+      setGetCarsLoading(false);
+    }
+  }, []);
+
+  const registerCar = useCallback(async (car: CreateCarProps) => {
+    try {
+      setRegisterCarLoading(true);
+      const response = await api.post("/cars", { ...car });
+
+      return response;
+    } catch (error) {
+      throw new Error();
+    } finally {
+      setRegisterCarLoading(false);
     }
   }, []);
 
   return {
     cars,
-    loading,
+    getCarsLoading,
+    registerCarLoading,
     getCars,
+    registerCar,
   };
 }

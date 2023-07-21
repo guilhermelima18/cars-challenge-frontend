@@ -1,0 +1,28 @@
+.container {
+  background-color: #1b1b1f;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.content {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
