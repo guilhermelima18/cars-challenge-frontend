@@ -1,0 +1,32 @@
+{
+  "cars": [
+    {
+      "id": "3903a1ec-24a5-4c81-aec8-ff1ba2ddad62",
+      "brand": "Chevrolet",
+      "model": "Ônix",
+      "year": "2015",
+      "plate": "PVZ-8045"
+    },
+    {
+      "id": "910fcd59-8e6e-4c3e-b60d-44abcb635089",
+      "brand": "Chevrolet",
+      "model": "Prisma",
+      "year": "2014",
+      "plate": "PXJ-2039"
+    },
+    {
+      "id": "65f17613-9f74-4e25-a176-e40b8d8f5bab",
+      "brand": "Chevrolet",
+      "model": "Cobalt",
+      "year": "2016",
+      "plate": "EIH-1005"
+    },
+    {
+      "id": "044ea1b3-4f55-46d6-91ec-6021c1591cd4",
+      "brand": "Chevrolet",
+      "model": "Astra",
+      "year": "2011",
+      "plate": "RHZ-4860"
+    }
+  ]
+}
