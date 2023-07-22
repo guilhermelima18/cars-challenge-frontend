@@ -5,6 +5,7 @@ export type Cars = {
   model: string;
   plate: string;
   year: string;
+  description: string;
   assessment: "Excelente" | "Bom" | "Ruim";
 };
 

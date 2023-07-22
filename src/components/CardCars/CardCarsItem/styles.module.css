@@ -4,6 +4,22 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  > a {
+    text-decoration: none;
+  }
+
+  @media (max-width: 500px) {
+    & {
+      width: 22rem;
+    }
+  }
+
+  @media (max-width: 360px) {
+    & {
+      width: 20rem;
+    }
+  }
 }
 
 .cardImg {

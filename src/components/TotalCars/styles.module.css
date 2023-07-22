@@ -13,4 +13,10 @@
   > span {
     color: var(--text);
   }
+
+  @media (max-width: 600px) {
+    & {
+      flex-direction: column;
+    }
+  }
 }

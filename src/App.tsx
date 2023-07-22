@@ -1,9 +1,8 @@
 import { Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
 import logo from "./assets/logo.svg";
 import carImg from "./assets/car.svg";
-
 import styles from "./styles/app.module.css";
-import { useNavigate } from "react-router-dom";
 
 export default function App() {
   const navigate = useNavigate();

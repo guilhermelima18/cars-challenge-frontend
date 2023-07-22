@@ -1,5 +1,5 @@
 .content {
-  width: 100%;
+  width: 50%;
   height: 400px;
   display: flex;
   align-items: center;
@@ -11,5 +11,17 @@
     height: 100%;
     object-fit: contain;
     border-radius: 10px;
+  }
+
+  @media (max-width: 1200px) {
+    & {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 750px) {
+    & {
+      margin-bottom: 0;
+    }
   }
 }

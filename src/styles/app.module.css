@@ -4,6 +4,15 @@
   height: 100vh;
   padding: 10rem;
   display: flex;
+
+  @media(max-width: 1200px) {
+    & {
+      flex-direction: column-reverse;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+  }
 }
 
 .sectionWelcome {
@@ -33,6 +42,39 @@
   > button {
     max-width: 370px;
   }
+
+  @media (max-width: 1200px) {
+    & {
+      width: 100%;
+      align-items: center;
+    }
+
+    & > img {
+      width: 250px;
+    }
+
+    & > h1 {
+      font-size: 2rem;
+    }
+
+    & > h4 {
+      font-size: 1.3rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    & > img {
+      width: 200px;
+    }
+
+    & > h1 {
+      font-size: 1.5rem;
+    }
+
+    & > h4 {
+      font-size: 1rem;
+    }
+  }
 }
 
 .sectionCar {
@@ -40,4 +82,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (max-width: 1200px) {
+    & {
+      width: 100%;
+      align-items: center;
+    }
+
+    & > img {
+      width: 400px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    & > img {
+      width: 300px;
+    }
+  }
 }

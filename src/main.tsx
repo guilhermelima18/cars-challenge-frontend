@@ -3,11 +3,12 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App.tsx";
 import Home from "./pages/Home.tsx";
+import RegisterCar from "./pages/RegisterCar.tsx";
+import DetailsCar from "./pages/DetailsCar.tsx";
+import { Layout } from "./components/Layout/index.tsx";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./global.css";
-import { Layout } from "./components/Layout/index.tsx";
-import RegisterCar from "./pages/RegisterCar.tsx";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,14 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <RegisterCar />
+      </Layout>
+    ),
+  },
+  {
+    path: "details-car/:id",
+    element: (
+      <Layout>
+        <DetailsCar />
       </Layout>
     ),
   },
