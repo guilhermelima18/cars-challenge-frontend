@@ -19,10 +19,10 @@ export function useCars() {
   const [getCarLoading, setGetCarLoading] = useState(false);
   const [registerCarLoading, setRegisterCarLoading] = useState(false);
 
-  const getCars = useCallback(async (page: number = 1) => {
+  const getCars = useCallback(async (page: number = 1, search: string = "") => {
     try {
       setGetCarsLoading(true);
-      const response = await api.get(`/cars?_page=${page}`);
+      const response = await api.get(`/cars?q=${search}&_page=${page}`);
 
       if (response.status === 200) {
         const total = Number(response.headers["x-total-count"]);
