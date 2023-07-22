@@ -16,7 +16,11 @@ export const PaginationItem = ({
   }
 
   return (
-    <Button variant="outline-danger" onClick={() => onPageChange(number)}>
+    <Button
+      data-testid="btn-pagination"
+      variant="outline-danger"
+      onClick={() => onPageChange(number)}
+    >
       {number}
     </Button>
   );

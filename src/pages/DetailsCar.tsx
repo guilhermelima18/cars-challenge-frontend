@@ -28,7 +28,7 @@ export default function DetailsCar() {
   return (
     <main className={styles.content}>
       <section className={styles.sectionImg}>
-        <img src={car?.imageUrl} alt={car?.model} />
+        <img data-testid="car-image" src={car?.imageUrl} alt={car?.model} />
       </section>
 
       <section className={styles.sectionAboutCar}>
@@ -45,11 +45,15 @@ export default function DetailsCar() {
         </div>
 
         <div className={styles.boxAboutCar}>
-          <h3>SOBRE O CARRO</h3>
+          <h3 data-testid="car-title">SOBRE O CARRO</h3>
           <p>{car?.description}</p>
         </div>
 
-        <Button variant="danger" onClick={handleRedirectHomeURL}>
+        <Button
+          data-testid="btn-car-list"
+          variant="danger"
+          onClick={handleRedirectHomeURL}
+        >
           Ver lista de veículos
         </Button>
       </section>

@@ -16,18 +16,22 @@ export default function App() {
       <section className={styles.sectionWelcome}>
         <img src={logo} alt="Logo da RentX" />
 
-        <h1>
+        <h1 data-testid="text-main">
           Visualize um <br />
           carro de maneira <br />
           simples e fácil
         </h1>
 
-        <h4>
+        <h4 data-testid="text-secondary">
           Vários modelos para você dirigir <br />
           seguro, com conforto e segurança.
         </h4>
 
-        <Button variant="danger" onClick={handleRedirectHomeURL}>
+        <Button
+          data-testid="btn-init"
+          variant="danger"
+          onClick={handleRedirectHomeURL}
+        >
           Começar agora
         </Button>
       </section>

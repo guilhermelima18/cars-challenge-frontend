@@ -7,6 +7,7 @@ export const Input = ({
   type,
   name,
   label,
+  dataTesId,
   maxLength = 50,
   error,
 }: InputProps) => {
@@ -18,6 +19,7 @@ export const Input = ({
         <Form.Group className="mb-3">
           <Form.Label>{label}</Form.Label>
           <Form.Control
+            data-testid={dataTesId}
             type={type}
             value={value}
             onChange={onChange}

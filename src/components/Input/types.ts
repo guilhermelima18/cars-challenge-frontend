@@ -6,6 +6,7 @@ export type InputProps = {
   type: string;
   name: string;
   label: string;
+  dataTesId?: string;
   maxLength?: number;
   error: string | undefined;
 };

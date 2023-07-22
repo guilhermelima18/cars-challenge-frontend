@@ -90,6 +90,7 @@ export default function RegisterCar() {
         text: `Veículo ${data.brand} - ${data.model} cadastrado.`,
         confirmButtonText: "Ok, continuar",
         confirmButtonColor: "#e31414",
+        confirmButtonAriaLabel: "btn-confirm",
       }).then((result) => {
         if (result.isConfirmed) {
           navigate("/home");
@@ -105,9 +106,15 @@ export default function RegisterCar() {
         <Form onSubmit={handleSubmit(onFormSubmit)}>
           <Form.Group className="mb-3">
             <Form.Label>Imagem do veículo</Form.Label>
-            <Form.Control type="file" id="img" onChange={handleImageChange} />
+            <Form.Control
+              data-testid="input-file"
+              type="file"
+              id="img"
+              onChange={handleImageChange}
+            />
           </Form.Group>
           <Input
+            dataTesId="input-brand"
             type="text"
             name="brand"
             label="Marca do veículo"
@@ -116,6 +123,7 @@ export default function RegisterCar() {
             error={errors?.brand?.message}
           />
           <Input
+            dataTesId="input-model"
             type="text"
             name="model"
             label="Modelo do veículo"
@@ -124,6 +132,7 @@ export default function RegisterCar() {
             error={errors?.model?.message}
           />
           <Input
+            dataTesId="input-year"
             type="text"
             name="year"
             label="Ano do veículo"
@@ -132,6 +141,7 @@ export default function RegisterCar() {
             error={errors?.year?.message}
           />
           <Input
+            dataTesId="input-plate"
             type="text"
             name="plate"
             label="Placa do veículo"
@@ -140,6 +150,7 @@ export default function RegisterCar() {
             error={errors?.plate?.message}
           />
           <Input
+            dataTesId="input-description"
             type="text"
             name="description"
             label="Descrição do veículo"
@@ -173,6 +184,7 @@ export default function RegisterCar() {
             />
           </Form.Group>
           <Button
+            data-testid="btn-register"
             variant="danger"
             className={styles.registerButton}
             type="submit"

@@ -16,7 +16,9 @@ export const CardCarsItem = ({ car }: CardCarsItemProps) => {
               {car.brand} - {car.model}
             </Card.Title>
             <Card.Title>{car.year}</Card.Title>
-            <Button variant="danger">Detalhes</Button>
+            <Button data-testid="btn-details" variant="danger">
+              Detalhes
+            </Button>
           </div>
         </Card.Body>
         <Card.Footer>
